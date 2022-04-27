@@ -31,6 +31,8 @@ Then, to start the network run the command `sudo mn --custom ./jellyfish_topolog
 To run the connectivity tests for the jellyfish and xpander topologies, simply run the python files from the mininet VM
 with 'python jellyfish_topology.py' and 'python xpander_topology.py'
 
+To test throughput between switches and hosts, I used iperf to test pairwise connections. to run iperf on two nodes, 
+use the command `iperf xx xx` where the node names are inserted. This must be run while the network is running in the mininet VM.
 
 ## Authors
 Simon Allocca - Graduate CS at Johns Hopkins University
