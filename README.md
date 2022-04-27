@@ -19,10 +19,13 @@ the host-only adapter which should have an IP address
 of the form 192.168.56.xxx. I used PuTTy to connect (https://www.putty.org/). You can also ssh from 
 any terminal using 'ssh mininet@192.168.56.101 -p mininet'
 
-You will also need to use pox for routing, but this is preinstalled with mininet.
+You will also need to use pox for routing, but this is preinstalled with mininet. To start the pox controller before you 
+spin up the network, run the command 'sudo ~/pox/pox.py openflow.discovery openflow.spanning_tree forwarding.l2_multi'.
 
 To change the parameters of the topology, simply go into the topology files and 
 change the parameter values in the line 'topos = { 'mytopo': ( lambda: MyTopo(degree=4, numSwitches=4, numHosts=4) ) }'
+
+Then, to start the network run the command 'sudo mn --custom ./jellyfish_topology.py --topo=mytopo --controller=remote,port=6633'
 
 ## Running Tests
 To run the connectivity tests for the jellyfish and xpander topologies, simply run the python files from the mininet VM
