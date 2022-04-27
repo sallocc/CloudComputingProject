@@ -1,9 +1,8 @@
 # Jellyfish vs. XPander Topologies
----
+
 This project was created for the Johns Hopkins course Cloud Computing taught by Soudeh Ghorbani. 
 
 # Summary
----
 - Getting Started
 - Running Tests
 - Authors
