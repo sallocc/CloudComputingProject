@@ -1,0 +1,13 @@
+{
+    "version": "3.10.4",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
